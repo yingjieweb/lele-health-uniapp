@@ -1,16 +1,54 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
-		}
-	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
-	}
+	},
+	"tabBar": {
+		"borderStyle": "black",
+		"backgroundColor": "#fff",
+		"color": "#9F9FA6",
+		"selectedColor": "#1296db",
+		"list": [
+			{
+				"pagePath": "pages/menu/index",
+				"text": "菜单",
+				"iconPath": "./static/tabBar/menu.png",
+				"selectedIconPath": "./static/tabBar/menu_selected.png"
+			},
+			{
+				"pagePath": "pages/cooking/index",
+				"text": "烹饪",
+				"iconPath": "./static/tabBar/cooking.png",
+				"selectedIconPath": "./static/tabBar/cooking_selected.png"
+			},
+			{
+				"pagePath": "pages/trend/index",
+				"text": "趋势",
+				"iconPath": "./static/tabBar/trend.png",
+				"selectedIconPath": "./static/tabBar/trend_selected.png"
+			}
+		]
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/menu/index",
+			"style": {
+				"navigationBarTitleText": "菜单"
+			}
+		},
+		{
+			"path": "pages/cooking/index",
+			"style": {
+				"navigationBarTitleText": "烹饪"
+			}
+		},
+		{
+			"path": "pages/trend/index",
+			"style": {
+				"navigationBarTitleText": "趋势"
+			}
+		}
+	]
 }
