@@ -1,5 +1,12 @@
 <template>
-  <div>cooking</div>
+  <div class="cooking">
+    <div class="content">
+      这里展示做出来啥菜
+    </div>
+    <div class="message">
+      做大做强，再创辉煌
+    </div>
+  </div>
 </template>
 
 <script lang="js">
@@ -9,5 +16,17 @@
 </script>
 
 <style lang="scss" scoped>
-
+.cooking {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: space-around;
+  .content {
+    text-align: center;
+  }
+  .message {
+    text-align: center;
+  }
+}
 </style>
